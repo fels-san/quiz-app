@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="start-screen">
+        <h1 class="heading">Quiz App</h1>
+        <button id="start-btn" class="btn start">Start Quiz</button>
+      </div>
+      <div class="quiz hide">
+        <div class="timer">
+          <div class="progress">
+            <div id="progress-bar" class="progress-bar">
+              <span id="timer" class="progress-text"></span>
+            </div>
+          </div>
+        </div>
+        <div class="question-wrapper">
+          <div id="counter" class="counter">
+            Question <span class="current">1</span><span class="total">/1</span>
+          </div>
+          <div id="question" class="question"></div>
+        </div>
+        <div id="answer-wrapper" class="answer-wrapper">
+          <div class="answer">
+            <span class="text">answer</span>
+            <span class="checkbox">
+              <span class="icon">✓</span>
+            </span>
+          </div>
+          <div class="answer">
+            <span class="text">answer</span>
+            <span class="checkbox">
+              <span class="icon">✓</span>
+            </span>
+          </div>
+          <div class="answer">
+            <span class="text">answer</span>
+            <span class="checkbox">
+              <span class="icon">✓</span>
+            </span>
+          </div>
+        </div>
+        <button id="submit-btn" class="btn submit" disabled>Submit</button>
+        <button id="next-btn" class="btn next">Next</button>
+      </div>
+      <div class="end-screen hide">
+        <h1 class="heading">Quiz App</h1>
+        <div class="score">
+          <span class="score-text">Your Score:</span>
+          <div id="result">0/10</div>
+        </div>
+        <button id="restart-btn" class="btn restart">Restart Quiz</button>
+      </div>
+    </div>
+  </body>
+</html>
